@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <ul>
+      <!-- Create an <li> element for each user in users -->
+      <% sightings.forEach((sighting, index) => { %>
+      <a href="/sightings/<%= index %>">
+        <li>
+          <%= sighting.YEAR %>, <%= sighting.STATE %>, <%= sighting.COUNTY %>
+        </li>
+      </a>
+      <% }); %>
+    </ul>
+  </body>
+</html>
